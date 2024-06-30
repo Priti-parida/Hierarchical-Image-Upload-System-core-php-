@@ -1,6 +1,6 @@
 <?php
 session_start();
-$db = new PDO('mysql:host=localhost;dbname=image_processers', 'root', '');
+require 'db_config.php';
 
 require 'user.php';
 require 'imageUpload.php';

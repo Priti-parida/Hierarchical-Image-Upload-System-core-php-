@@ -5,7 +5,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-$db = new PDO('mysql:host=localhost;dbname=image_processers', 'root', '');
+require 'db_config.php';
 require 'imageUpload.php';
 
 $imageUpload = new ImageUpload($db);
